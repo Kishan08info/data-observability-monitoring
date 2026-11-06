@@ -1,0 +1,29 @@
+{
+  "runs_monitored": 180,
+  "pipelines": [
+    "customers",
+    "orders",
+    "payments"
+  ],
+  "date_range": [
+    "2026-09-08",
+    "2026-11-06"
+  ],
+  "alerts_total": 6,
+  "alerts_by_check": {
+    "duplicate_rate": 1,
+    "freshness_sla": 1,
+    "null_rate": 1,
+    "reconciliation": 1,
+    "schema_drift": 1,
+    "volume_anomaly": 1
+  },
+  "alerts_by_severity": {
+    "critical": 3,
+    "warning": 3
+  },
+  "injected_incidents": 5,
+  "injected_incidents_with_alert": 5,
+  "clean_days_with_alerts": 0,
+  "clean_days_total": 175
+}

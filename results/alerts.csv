@@ -1,0 +1,7 @@
+run_date,pipeline,check,severity,metric_value,threshold,detail
+2026-10-11,payments,schema_drift,warning,1,schema unchanged vs prior day,"schema changed: added ['payment_method'], removed —"
+2026-10-19,orders,reconciliation,critical,69.03,|loaded - source| <= 2.0% of source,loaded 612 vs source 1976 (69.0% gap)
+2026-10-19,orders,volume_anomaly,critical,-7.1,|z| >= 3.0 (14d mean 1897),loaded 612 rows vs trailing 14-day mean 1897 (std 181); z=-7.10
+2026-10-25,customers,null_rate,warning,18.0,null rate <= 5.0%,null rate 18.0% exceeds 5.0%
+2026-10-30,payments,freshness_sla,critical,320.0,lag <= 120 min,freshness lag 320.0 min exceeds 120 min SLA
+2026-11-04,orders,duplicate_rate,warning,6.5,dup rate <= 2.0%,duplicate rate 6.5% exceeds 2.0%
